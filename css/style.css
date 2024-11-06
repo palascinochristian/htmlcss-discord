@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* border: 2px solid; */
 }
 
 /*--------------------
@@ -19,14 +20,36 @@
       TYPHOGRAPHY
 /*--------------------*/
 body {
-    font-family: "Roboto", serif;
-    font-weight: 600px;
+    font-family: "Roboto";
+    font-weight: 400;
     line-height: 1.5;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+button {
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+h1,
+h2 {
+    font-weight: 900;
+}
+
+p {
+    color: #23272A;
+    font-weight: 500;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 /*--------------------
@@ -102,7 +125,6 @@ a {
     background-image: url('../img/jumbo.png');
     background-size: cover;
     background-position: center;
-
 }
 
 .header-bottom h1 {
@@ -113,6 +135,8 @@ a {
 .header-bottom p {
     font-size: 18px;
     padding-bottom: 20px;
+    font-weight: 700;
+    color: #fff;
 }
 
 
@@ -143,7 +167,7 @@ a {
 }
 
 .header-top .login {
-    text-align: center;
+    text-align: right
 }
 
 .header-bottom .container {
@@ -159,19 +183,46 @@ a {
 
 .alternate>.container {
     display: flex;
-    padding: 50px 0;
+    padding: 150px 0;
 }
 
 section.alternate:nth-child(2n) {
     background-color: #D3D3D3;
 }
 
+section.alternate:nth-child(2) .col-sm {
+    align-items: flex-start;
+}
+
 .container .col-big {
     width: 60%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+section.alternate:nth-child(2) .col-big {
+    justify-content: flex-end;
 }
 
 .container .col-sm {
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.col-sm .content {
+    align-self: flex-end;
+}
+
+.col-sm h1 {
+    font-size: 40px;
+    margin-top: 25px;
+    color: #23272A;
+}
+
+.col-sm p {
+    margin-top: 20px;
 }
 
 .container .col-bigger {
