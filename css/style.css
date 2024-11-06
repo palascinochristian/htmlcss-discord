@@ -16,6 +16,11 @@
     margin: 0 auto;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 /*--------------------
       TYPHOGRAPHY
 /*--------------------*/
@@ -37,8 +42,8 @@ button {
     font-weight: inherit;
 }
 
-h1,
-h2 {
+h1 {
+    font-size: 40px;
     font-weight: 900;
 }
 
@@ -47,9 +52,14 @@ p {
     font-weight: 500;
 }
 
-img {
-    width: 100%;
-    height: auto;
+h2 {
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    padding-top: 20px;
+    color: #23272A;
+    font-weight: 900;
 }
 
 /*--------------------
@@ -128,7 +138,6 @@ img {
 }
 
 .header-bottom h1 {
-    font-size: 40px;
     padding-bottom: 30px;
 }
 
@@ -216,7 +225,6 @@ section.alternate:nth-child(2) .col-big {
 }
 
 .col-sm h1 {
-    font-size: 40px;
     margin-top: 25px;
     color: #23272A;
 }
@@ -227,6 +235,22 @@ section.alternate:nth-child(2) .col-big {
 
 .container .col-bigger {
     width: 100%;
+}
+
+.col-bigger .content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.col-bigger h1 {
+    color: #23272A;
+    margin-top: 25px;
+}
+
+.content .btn {
+    align-self: center;
 }
 
 /*--------------------
