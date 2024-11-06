@@ -1,0 +1,221 @@
+/*--------------------
+        RESET
+/*--------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*--------------------
+        GENERAL
+/*--------------------*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*--------------------
+        DEBUG
+/*--------------------*/
+/* .debug .header-top {
+    background-color: #ADD8E6;
+}
+
+.debug .header-bottom {
+    background-color: #00008B;
+}
+
+.debug .header-top>.container {
+    background-color: #DAA520;
+}
+
+.debug .header-bottom>.container {
+    background-color: #EE82EE;
+    min-height: 400px;
+}
+
+.debug .header-top .container>* {
+    border: 2px dashed black;
+}
+
+.debug .header-bottom>* {
+    border: 2px dashed black;
+}
+
+.debug main .container>* {
+    border: 2px dashed black;
+}
+
+.debug .container .col-big,
+.debug .container .col-sm {
+    min-height: 500px;
+}
+
+.debug .container .col-big {
+    background-color: #1E90FF;
+}
+
+.debug .container .col-sm {
+    background-color: #FFC0CB;
+}
+
+.debug .container .col-bigger {
+    background-color: #228B22;
+    min-height: 800px;
+}
+
+.debug .footer-top>.container {
+    min-height: 600px;
+}
+
+.debug .container .col {
+    border: 2px dashed white;
+    background-color: #20B2AA;
+}
+
+.debug .container .col-med {
+    border-right: 2px dashed black;
+    background-color: #F08080;
+}
+
+.debug .container .col-group {
+    border: 2px dashed black;
+}
+
+.debug .footer-bottom>.container {
+    background-color: #7FFFD4;
+    min-height: 50px;
+
+}
+
+.debug .container button {
+    background-color: #FFB6C1;
+    border: 2px dashed black;
+} */
+
+/*--------------------
+        HEADER
+/*--------------------*/
+.header-top {
+    padding: 15px 0;
+}
+
+.header-bottom {
+    padding: 40px 0;
+}
+
+.header-top>.container {
+    display: flex;
+}
+
+.header-top .logo,
+.header-top .login {
+    width: 20%;
+}
+
+.header-top nav {
+    width: 60%;
+    text-align: center;
+
+}
+
+.header-top nav>ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.header-top nav ul li {
+    list-style: none;
+    display: flex;
+}
+
+.header-top nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-top .logo {
+    text-align: left;
+}
+
+.header-top .login {
+    text-align: right;
+}
+
+.header-top .container>* {
+    padding: 6px;
+}
+
+.header-bottom .container {
+    width: 45%;
+
+}
+
+/*--------------------
+        MAIN
+/*--------------------*/
+
+.alternate>.container {
+    display: flex;
+    padding: 50px 0;
+}
+
+section.alternate:nth-child(2n) {
+    background-color: #D3D3D3;
+}
+
+.container .col-big {
+    width: 60%;
+}
+
+.container .col-sm {
+    width: 40%;
+}
+
+.container .col-bigger {
+    width: 100%;
+}
+
+/*--------------------
+        FOOTER
+/*--------------------*/
+.footer-bottom {
+    margin-top: 2px;
+    padding-top: 30px;
+}
+
+.footer-top,
+.footer-bottom {
+    background-color: #23272A;
+}
+
+.footer-top>.container {
+    display: flex;
+    padding: 6px 0 20px 0;
+}
+
+.container .col-group {
+    width: 100%;
+    display: flex;
+}
+
+.container .col-med {
+    width: 40%;
+}
+
+.container .col {
+    width: 15%;
+}
+
+.footer-bottom>.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container button {
+    margin: 15px 0;
+    padding: 5px;
+    font-size: 18px;
+}
