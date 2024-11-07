@@ -264,8 +264,6 @@ section.alternate:nth-child(2) .col-big {
 /*--------------------
         FOOTER
 /*--------------------*/
-.footer-bottom {}
-
 .footer-top,
 .footer-bottom {
     background-color: #23272A;
